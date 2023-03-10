@@ -33,10 +33,10 @@ class Jedziemy:
         while len(self.gra.los()) != 6:
             trafy[len(self.gra.los())] += 1
             self.ilosc_prob += 1
-            print(self.ilosc_prob, trafy, self.licznik.licz(len(self.gra.los())))
+            print(f'próba: {self.ilosc_prob}, {trafy}, {self.licznik.licz(len(self.gra.los()))}')
         trafy[6] += 1
         self.ilosc_prob += 1
-        print(self.ilosc_prob, trafy, self.licznik.licz(6))
+        print(f'próba: {self.ilosc_prob}, {trafy}, {self.licznik.licz(6)}')
         print('MAMY 6!!!!')
 
 
