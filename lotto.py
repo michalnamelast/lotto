@@ -19,6 +19,7 @@ class Licznik:
     def licz(self, punkty):
         self.budzet += -3
         self.wygrana += self.trafienia[punkty]
+        self.wygrana = round(self.wygrana, 2)
         return f'    Wygrano Łącznie: {self.wygrana}zł     Przeznaczono na Zakłady: {self.budzet}zł'
 
 
